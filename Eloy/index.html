@@ -1,237 +1,166 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Eloy — Pàgina Individual | Grup de Treball JE</title>
-
-	<!-- Tipografia oficial del grup (Libre Baskerville) -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-	<!-- Icones oficials (Bootstrap Icons) -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-	<!-- Estils CSS -->
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eloy — Pàgina Individual | Grup de Treball JE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./theme/css/style.css">
 </head>
 <body>
 
-	<!-- ==========================================================================
-	     BARRA DE NAVEGACIÓ SUPERIOR (ESTIL GOOGLE SITES)
-	     ========================================================================== -->
-	<header class="site-header">
-		<div class="nav-container">
-			<a href="#inici" class="site-logo">
-				<i class="bi bi-folder-fill" style="color: var(--terracotta);"></i>
-				<span>Grup JE — Eloy</span>
-				<span class="badge">DAW2</span>
-			</a>
-			<nav class="site-nav">
-				<a href="#inici" class="active">Inici</a>
-				<a href="#grup">Grup de Treball</a>
-				<a href="#perfil">Perfil i Rol</a>
-				<a href="#compromis">Compromís</a>
-				<a href="#guia-estils">Guia d'Estils</a>
-				<a href="#contacte">Contacte</a>
-			</nav>
-		</div>
-	</header>
+  
+  <hero class="profile" aria-label="Perfil d'Eloy">
 
-	<!-- ==========================================================================
-	     BANNER PRINCIPAL (HERO BANNER DE GOOGLE SITES)
-	     ========================================================================== -->
-	<section id="inici" class="banner">
-		<div class="banner-content">
-			<span class="banner-tag">Projecte MPO · Lliurament Individual</span>
-			<h1>Pàgina de Treball d'Eloy</h1>
-			<p>Grup de Treball JE — Desenvolupament Web & Verificació</p>
-		</div>
-	</section>
+    <div class="profile__mark" aria-hidden="true">
+    </div>
 
-	<!-- ==========================================================================
-	     CONTINGUT PRINCIPAL EN BLOCS / CARDS
-	     ========================================================================== -->
-	<main class="main-container">
+    <!-- Any a la cantonada superior-dreta -->
+    <p class="profile__year" aria-label="Any 2026">
+      <span>20</span>
+      <span>26</span>
+    </p>
 
-		<!-- BLOC 1: NOM DEL GRUP I MEMBRES -->
-		<section id="grup" class="section-block">
-			<h2 class="section-title">
-				<i class="bi bi-people-fill"></i>
-				1. Nom del Grup i Membres
-			</h2>
-			
-			<div class="grid-2">
-				<div>
-					<div class="info-box">
-						<h3>Nom de Grup: <strong>JE</strong></h3>
-						<p>El nom del nostre grup correspon a les inicials dels dos integrants: <strong>Jan i Eloy</strong>. Hem escollit aquest nom per la seva senzillesa, claredat i representació directa de l'equip de treball.</p>
-					</div>
-				</div>
+    <!-- Pastilla central amb foto -->
+    <figure class="profile__pill">
+      <img
+        class="profile__photo"
+        src="E:/Ilerna/EGonzalo/MPO/JE HTML CSS/Projecte-MPO---Site-Col-lectiu/Eloy/foto/IMG_8620.jpg"
+        alt="Foto d'Eloy"
+        width="640"
+        height="960"
+      >
+    </figure>
 
-				<div>
-					<div class="info-box" style="border-left-color: var(--olive);">
-						<h3>Membres i Rols del Grup</h3>
-						<p>
-							• <strong>Eloy:</strong> Editor i Verificador de tasques / codi.<br>
-							• <strong>Jan Altisent:</strong> Dissenyador d'interfícies i Verificador.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Títol centrat sobre la foto -->
+    <header class="profile__title">
+      <h1 class="profile__name">
+        Eloy
+      </h1>
+      <span class="profile__rule" aria-hidden="true"></span>
+      <p class="profile__role">
+        <span>Editor &amp;</span>
+        <span class="profile__role-line profile__role-line--italic">Verificador</span>
+      </p>
+    </header>
 
-		<!-- BLOC 2: FOTO I PRESENTACIÓ PROFESSIONAL -->
-		<section id="perfil" class="section-block">
-			<h2 class="section-title">
-				<i class="bi bi-person-badge-fill"></i>
-				2. Membres: Foto i Presentació Professional
-			</h2>
+    <!-- Tagline cantonada inferior-esquerra -->
+    <p class="profile__tagline">
+      <span>Perfil personal</span>
+      <span>Grup JE — DAW2</span>
+    </p>
 
-			<div class="profile-card">
-				<div class="profile-img-container">
-					<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Foto d'Eloy" class="profile-img">
-					<p class="profile-tag">Eloy · Editor & Verificador</p>
-				</div>
+  </hero>
 
-				<div>
-					<h3 style="font-size: 20px; margin-bottom: 10px;">Presentació d'Eloy</h3>
-					<p style="margin-bottom: 14px; font-size: 15px; color: var(--muted);">
-						Sóc estudiant de segon curs de <strong>Desenvolupament d'Aplicacions Web (DAW2)</strong> a ILERNA. Em considero una persona constant, organitzada i amb facilitat per al treball col·laboratiu en entorns de desenvolupament web.
-					</p>
-					<p style="font-size: 15px; color: var(--muted);">
-						El meu objectiu a nivell professional és dominar tant el disseny d'interfícies frontend com l'arquitectura de programari, aplicant estàndards de qualitat, codi net i bones pràctiques en cada projecte.
-					</p>
-				</div>
-			</div>
-		</section>
+  
+  
+  <main class="content">
 
-		<!-- BLOC 3: COMPROMÍS INDIVIDUAL -->
-		<section id="compromis" class="section-block">
-			<h2 class="section-title">
-				<i class="bi bi-check2-circle"></i>
-				3. Compromís vers a les Tasques
-			</h2>
+    <!-- SECCIÓ 1: NOM DEL GRUP I MEMBRES -->
+    <section class="content__section">
+      <h2 class="content__heading">Nom del Grup i Membres</h2>
 
-			<div class="info-box">
-				<h3>El meu compromís personal amb el grup:</h3>
-				<p style="margin-bottom: 16px;">Com a membre de l'equip i amb el rol d'<strong>Editor i Verificador</strong>, assumeixo el compromís de:</p>
-				
-				<ul class="custom-list">
-					<li>
-						<i class="bi bi-check-circle-fill"></i>
-						<span><strong>Revisió i verificació:</strong> Comprovar que el codi HTML/CSS i les tasques de lliurament compleixin amb tots els requisits i funcionin correctament.</span>
-					</li>
-					<li>
-						<i class="bi bi-check-circle-fill"></i>
-						<span><strong>Coherència i edició:</strong> Vetllar per l'aplicació correcta de la nostra guia d'estils i per la claredat en la documentació del grup.</span>
-					</li>
-					<li>
-						<i class="bi bi-check-circle-fill"></i>
-						<span><strong>Treball en equip i puntualitat:</strong> Assistir a les reunions de coordinació, mantenir una comunicació fluida amb el company i lliurar totes les tasques dins dels terminis establerts.</span>
-					</li>
-				</ul>
-			</div>
-		</section>
+      <div class="content__grid">
+        <div class="content__card">
+          <h3 class="content__card-title">Nom de Grup: JE</h3>
+          <p>El nom del nostre grup correspon a les inicials dels dos integrants: <strong>Jan i Eloy</strong>. Hem escollit aquest nom per la seva senzillesa, claredat i representació directa de l'equip de treball.</p>
+        </div>
 
-		<!-- BLOC 4: GUIA D'ESTILS I DOCUMENT COMPARTIT -->
-		<section id="guia-estils" class="section-block">
-			<h2 class="section-title">
-				<i class="bi bi-palette-fill"></i>
-				4. Guia d'Estils del Grup
-			</h2>
+        <div class="content__card">
+          <h3 class="content__card-title">Membres i Rols</h3>
+          <ul class="content__list">
+            <li><strong>Eloy:</strong> Editor i Verificador de tasques / codi.</li>
+            <li><strong>Jan Altisent:</strong> Dissenyador d'interfícies i Verificador.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-			<p style="font-size: 15px; color: var(--muted); margin-bottom: 12px;">
-				Aquesta pàgina s'ha creat respectant fidelment els patrons de disseny, tipografia i colors acordats pel nostre grup:
-			</p>
+    <!-- SECCIÓ 2: PRESENTACIÓ PROFESSIONAL -->
+    <section class="content__section">
+      <h2 class="content__heading">Presentació Professional</h2>
+      <p>
+        Sóc estudiant de segon curs de <strong>Desenvolupament d'Aplicacions Web (DAW2)</strong> a ILERNA. Em considero una persona constant, organitzada i amb facilitat per al treball col·laboratiu en entorns de desenvolupament web.
+      </p>
+      <p>
+        El meu objectiu a nivell professional és dominar tant el disseny d'interfícies frontend com l'arquitectura de programari, aplicant estàndards de qualitat, codi net i bones pràctiques en cada projecte.
+      </p>
+    </section>
 
-			<!-- Paleta cromàtica -->
-			<div class="palette-container">
-				<div class="color-card">
-					<div class="color-sample c-paper"></div>
-					<div class="color-info">
-						<div class="color-name">Paper</div>
-						<div class="color-hex">#F4F0E8</div>
-					</div>
-				</div>
-				<div class="color-card">
-					<div class="color-sample c-ink"></div>
-					<div class="color-info">
-						<div class="color-name">Ink</div>
-						<div class="color-hex">#242320</div>
-					</div>
-				</div>
-				<div class="color-card">
-					<div class="color-sample c-terracotta"></div>
-					<div class="color-info">
-						<div class="color-name">Terracotta</div>
-						<div class="color-hex">#B85F43</div>
-					</div>
-				</div>
-				<div class="color-card">
-					<div class="color-sample c-olive"></div>
-					<div class="color-info">
-						<div class="color-name">Olive</div>
-						<div class="color-hex">#5D6244</div>
-					</div>
-				</div>
-				<div class="color-card">
-					<div class="color-sample c-muted"></div>
-					<div class="color-info">
-						<div class="color-name">Muted</div>
-						<div class="color-hex">#6B665C</div>
-					</div>
-				</div>
-			</div>
+    <!-- SECCIÓ 3: COMPROMÍS INDIVIDUAL -->
+    <section class="content__section">
+      <h2 class="content__heading">Compromís vers a les Tasques</h2>
+      <p>Com a membre de l'equip i amb el rol d'<strong>Editor i Verificador</strong>, assumeixo el compromís de:</p>
+      <ul class="content__list content__list--check">
+        <li><strong>Revisió i verificació:</strong> Comprovar que el codi HTML/CSS i les tasques de lliurament compleixin amb tots els requisits i funcionin correctament.</li>
+        <li><strong>Coherència i edició:</strong> Vetllar per l'aplicació correcta de la nostra guia d'estils i per la claredat en la documentació del grup.</li>
+        <li><strong>Treball en equip i puntualitat:</strong> Assistir a les reunions de coordinació, mantenir una comunicació fluida amb el company i lliurar totes les tasques dins dels terminis establerts.</li>
+      </ul>
+    </section>
 
-			<!-- Document compartit en mode lectura -->
-			<div class="doc-card">
-				<div class="doc-info">
-					<h4><i class="bi bi-file-earmark-text-fill" style="color: var(--terracotta);"></i> Document Oficial de la Guia d'Estils</h4>
-					<p>Document redactat amb les especificacions de disseny compartit en mode lectura.</p>
-				</div>
-				<a href="https://docs.google.com/document/d/1gqYw8Z0eG8B-m6iX_GUIA_DESTILS/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-primary">
-					<i class="bi bi-box-arrow-up-right"></i>
-					Veure Document (Lectura)
-				</a>
-			</div>
-		</section>
+    <!-- SECCIÓ 4: GUIA D'ESTILS -->
+    <section class="content__section">
+      <h2 class="content__heading">Guia d'Estils del Grup</h2>
+      <p>Aquesta pàgina s'ha creat respectant fidelment els patrons de disseny, tipografia i colors acordats pel nostre grup:</p>
 
-		<!-- BLOC 5: CONTACTE -->
-		<section id="contacte" class="section-block">
-			<h2 class="section-title">
-				<i class="bi bi-envelope-fill"></i>
-				5. Contacte i Dades
-			</h2>
+      <div class="palette">
+        <div class="palette__chip palette__chip--paper">
+          <span class="palette__label">Paper</span>
+          <span class="palette__hex">#F4F0E8</span>
+        </div>
+        <div class="palette__chip palette__chip--ink">
+          <span class="palette__label">Ink</span>
+          <span class="palette__hex">#242320</span>
+        </div>
+        <div class="palette__chip palette__chip--terracotta">
+          <span class="palette__label">Terracotta</span>
+          <span class="palette__hex">#B85F43</span>
+        </div>
+        <div class="palette__chip palette__chip--olive">
+          <span class="palette__label">Olive</span>
+          <span class="palette__hex">#5D6244</span>
+        </div>
+        <div class="palette__chip palette__chip--muted">
+          <span class="palette__label">Muted</span>
+          <span class="palette__hex">#6B665C</span>
+        </div>
+      </div>
 
-			<div class="contact-grid">
-				<a href="mailto:eloby09@alumnes.ilerna.com" class="contact-item">
-					<i class="bi bi-envelope-at"></i>
-					<div>
-						<strong>Correu acadèmic:</strong><br>
-						<span>eloby09@alumnes.ilerna.com</span>
-					</div>
-				</a>
+      <div class="content__doc">
+        <div>
+          <h3 class="content__card-title">Document Oficial de la Guia d'Estils</h3>
+          <p>Document redactat amb les especificacions de disseny compartit en mode lectura.</p>
+        </div>
+        <a href="https://docs.google.com/document/d/1gqYw8Z0eG8B-m6iX_GUIA_DESTILS/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="content__btn">
+          Veure Document ↗
+        </a>
+      </div>
+    </section>
 
-				<a href="https://github.com/eloby09" target="_blank" rel="noreferrer" class="contact-item">
-					<i class="bi bi-github"></i>
-					<div>
-						<strong>Repositori GitHub:</strong><br>
-						<span>github.com/eloby09</span>
-					</div>
-				</a>
-			</div>
-		</section>
+    <!-- SECCIÓ 5: CONTACTE -->
+    <section class="content__section">
+      <h2 class="content__heading">Contacte i Dades</h2>
 
-	</main>
+      <div class="content__grid">
+        <a href="mailto:eloby09@alumnes.ilerna.com" class="content__contact">
+          <span class="content__contact-label">Correu acadèmic</span>
+          <span>eloby09@alumnes.ilerna.com</span>
+        </a>
+        <a href="https://github.com/eloby09" target="_blank" rel="noreferrer" class="content__contact">
+          <span class="content__contact-label">Repositori GitHub</span>
+          <span>github.com/eloby09</span>
+        </a>
+      </div>
+    </section>
 
-	<!-- ==========================================================================
-	     PEU DE PÀGINA (ESTIL GOOGLE SITES)
-	     ========================================================================== -->
-	<footer class="site-footer">
-		<p>© 2026 Grup de Treball JE — DAW2 ILERNA | Projecte MPO Site Col·lectiu</p>
-	</footer>
+  </main>
+
+
+  <footer class="site-footer">
+    <p>© 2026 Grup de Treball JE — DAW2 ILERNA | Projecte MPO Site Col·lectiu</p>
+  </footer>
 
 </body>
 </html>
