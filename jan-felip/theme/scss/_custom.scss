@@ -1,0 +1,148 @@
+@use "variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: $font-sans;
+  color: $color-text-main;
+  background:
+    radial-gradient(ellipse at 50% 42%, rgba($color-graphite, 0.55) 0%, transparent 58%),
+    $color-bg-main;
+}
+
+.profile {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  overflow: hidden;
+
+  // —— Cantonades —— //
+  &__mark {
+    position: absolute;
+    top: clamp(1.25rem, 4vw, 2.75rem);
+    left: clamp(1.25rem, 4vw, 2.75rem);
+    color: $color-accent;
+  }
+
+  &__year {
+    position: absolute;
+    top: clamp(1.25rem, 4vw, 2.75rem);
+    right: clamp(1.25rem, 4vw, 2.75rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: $font-serif;
+    font-size: clamp(0.85rem, 1.5vw, 1.05rem);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+    color: $color-accent;
+  }
+
+  &__tagline {
+    position: absolute;
+    bottom: clamp(1.25rem, 4vw, 2.75rem);
+    left: clamp(1.25rem, 4vw, 2.75rem);
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin: 0;
+    font-size: clamp(0.7rem, 1.2vw, 0.85rem);
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    line-height: 1.35;
+    color: $color-silver;
+  }
+
+  // —— Pastilla central —— //
+  &__pill {
+    position: relative;
+    z-index: 0;
+    margin: 0;
+    width: min(28vw, 18rem);
+    aspect-ratio: 9 / 16;
+    border-radius: 6rem;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px rgba($color-silver, 0.06);
+
+    @media (max-width: 640px) {
+      width: min(52vw, 14rem);
+    }
+  }
+
+  &__photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    filter: sepia(0.35) contrast(0.95) brightness(0.9);
+    transition: all 0.3s;
+    filter: blur(1rem);
+
+    &:hover {
+      filter: blur(0);
+    }
+  }
+
+
+  // —— Títol centrat —— //
+  &__title {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.75rem, 2vw, 1.5rem);
+    padding: 0 clamp(1rem, 4vw, 2rem);
+    pointer-events: none;
+  }
+
+  &__name {
+    margin: 0;
+    font-family: $font-serif;
+    font-size: clamp(2.25rem, 7vw, 5.5rem);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    color: $color-silver;
+    white-space: nowrap;
+  }
+
+  &__rule {
+    flex: 0 0 auto;
+    width: clamp(2.5rem, 8vw, 5.5rem);
+    height: 1px;
+    background: rgba($color-silver, 0.75);
+  }
+
+  &__role {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: $font-serif;
+    font-size: clamp(1rem, 2.4vw, 1.65rem);
+    font-weight: 500;
+    line-height: 1.15;
+    color: $color-accent;
+  }
+
+  &__role-line {
+    display: block;
+
+    &--italic {
+      font-style: italic;
+      font-weight: 500;
+    }
+  }
+}
