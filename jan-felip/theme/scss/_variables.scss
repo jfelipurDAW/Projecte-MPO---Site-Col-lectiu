@@ -1,10 +1,4 @@
-// ==========================================================================
-// Paleta de Colors
-// ==========================================================================
 
-// --------------------------------------------------------------------------
-// 1. Colors Base (Valors Hexadecimals)
-// --------------------------------------------------------------------------
 $color-charcoal:        #1e1c1b;
 $color-graphite:        #403C39;
 $color-pale-oak:        #D9CFB4;
@@ -14,20 +8,16 @@ $color-dark-goldenrod:  #AF8445;
 $color-white: #FFF;
 $color-black: #000;
 
-// --------------------------------------------------------------------------
-// 2. Rols Semàntics / Disseny
-// --------------------------------------------------------------------------
+
 $color-primary: $color-dark-goldenrod;
 $color-secondary: $color-pale-oak;
 $color-dark: $color-charcoal;
 
-// Fons i Textos
 $color-bg-main: $color-charcoal;
 $color-bg-dark: $color-charcoal;
 $color-text-main: $color-silver;
 $color-text-light: $color-silver;
 $color-accent: $color-dark-goldenrod;
 
-// Tipografia
 $font-serif: "Cormorant Garamond", "Libre Baskerville", Georgia, serif;
 $font-sans: "Outfit", "Segoe UI", sans-serif;

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JE · Grup de treball</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: "#F4F0E8",
+            ink: "#242320",
+            terracotta: "#B85F43",
+            olive: "#5D6244",
+            muted: "#6B665C"
+          },
+          fontFamily: {
+            serif: ["Libre Baskerville", "Georgia", "serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-ink text-paper font-serif">
+  <header class="sticky top-0 z-20 border-b border-paper/15 bg-ink/95 backdrop-blur">
+    <div class="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-5 py-4 md:px-8">
+      <a href="#inici" class="flex items-center gap-3 text-lg tracking-tight">
+        <img src="assets/logo_secondary_512.png" alt="" class="h-11 w-11 object-contain">
+      </a>
+      <nav class="flex gap-5 text-sm text-paper/60">
+        <a class="inline-flex items-center gap-1.5 hover:text-paper" href="#membres"><i class="bi bi-people text-[#ffffff]"></i>Membres</a>
+        <a class="inline-flex items-center gap-1.5 hover:text-paper" href="#compromis"><i class="bi bi-check2-square text-[#ffffff]"></i>Compromís</a>
+        <a class="inline-flex items-center gap-1.5 hover:text-paper" href="#guia"><i class="bi bi-palette text-[#ffffff]"></i>Guia</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inici">
+    <section class="mx-auto grid w-full max-w-6xl items-center gap-10 px-5 py-16 md:grid-cols-[auto_1fr] md:px-8 md:py-24">
+      <img src="assets/logo_primary_512.png" alt="Monograma JE" class="w-52 md:w-72">
+      <div>
+        <p class="mb-4 text-xs uppercase tracking-[0.18em] text-paper/60">Nom del grup</p>
+        <h1 class="max-w-[12ch] text-5xl leading-none md:text-7xl">Grup <em class="font-normal text-terracotta">JE</em></h1>
+        <p class="mt-6 max-w-xl text-lg leading-relaxed text-paper/70">El grup es diu JE. El monograma és la marca comuna de Jan Altisent, Eloy Gonzalo i Jan Felip.</p>
+      </div>
+    </section>
+
+    <section id="membres" class="scroll-mt-20 border-t border-paper/15">
+      <div class="mx-auto w-full max-w-6xl px-5 py-16 md:px-8 md:py-20">
+        <div class="mb-10">
+          <p class="mb-3 text-xs uppercase tracking-[0.18em] text-paper/60">Membres</p>
+          <h2 class="text-4xl leading-none md:text-5xl">Qui som i <em class="font-normal text-terracotta">què fem</em></h2>
+        </div>
+        <ul class="grid gap-8 md:grid-cols-3">
+          <li>
+            <a href="jan-a/index.html" class="group block">
+              <img src="https://pbs.twimg.com/profile_images/1899907833753178112/OiEMRdXj_400x400.jpg" alt="Retrat de Jan Altisent" class="mb-4 aspect-[4/5] w-full object-cover">
+              <p class="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.14em] text-terracotta"><i class="bi bi-brush text-[#ffffff]"></i>Disseny i verificació</p>
+              <h3 class="mt-2 text-2xl group-hover:text-terracotta">Jan Altisent</h3>
+              <p class="mt-3 text-sm leading-relaxed text-paper/70">Dissenya la interfície i en comprova la qualitat. Treballa el web amb una mirada de producte i de desenvolupament multiplataforma.</p>
+            </a>
+          </li>
+          <li>
+            <a href="Eloy/index.html" class="group block">
+              <img src="Eloy/foto/IMG_8620.jpg" alt="Retrat d'Eloy" class="mb-4 aspect-[4/5] w-full object-cover">
+              <p class="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.14em] text-terracotta"><i class="bi bi-pencil text-[#ffffff]"></i>Edició i verificació</p>
+              <h3 class="mt-2 text-2xl group-hover:text-terracotta">Eloy</h3>
+              <p class="mt-3 text-sm leading-relaxed text-paper/70">Edita i verifica el lliurament. Revisa que el codi i la documentació segueixin la guia d'estils i es puguin llegir com un treball d'equip.</p>
+            </a>
+          </li>
+          <li>
+            <a href="jan-felip/index.html" class="group block">
+              <img src="jan-felip/assets/jo.jpg" alt="Retrat de Jan Felip Urgell" class="mb-4 aspect-[4/5] w-full object-cover object-[center_18%]">
+              <p class="inline-flex items-center gap-1.5 text-xs uppercase tracking-[0.14em] text-terracotta"><i class="bi bi-diagram-3 text-[#ffffff]"></i>Coordinació</p>
+              <h3 class="mt-2 text-2xl group-hover:text-terracotta">Jan Felip Urgell</h3>
+              <p class="mt-3 text-sm leading-relaxed text-paper/70">Coordina el ritme del grup. Fa visibles els acords, els terminis i la lectura de conjunt del lloc col·lectiu.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="compromis" class="scroll-mt-20 border-t border-paper/15">
+      <div class="mx-auto w-full max-w-6xl px-5 py-16 md:px-8 md:py-20">
+        <p class="mb-3 text-xs uppercase tracking-[0.18em] text-paper/60">Compromís</p>
+        <h2 class="mb-10 max-w-[16ch] text-4xl leading-none md:text-5xl">El rol de <em class="font-normal text-terracotta">cadascú</em></h2>
+        <ul class="divide-y divide-paper/15 border-y border-paper/15">
+          <li class="grid gap-3 py-6 md:grid-cols-[14rem_1fr] md:items-baseline">
+            <p class="text-terracotta">Jan Altisent</p>
+            <p class="text-paper/70">Es compromet a dissenyar la interfície i a verificar que el resultat es vegi professional: jerarquia, color i una experiència clara, també quan el treball toqui el desenvolupament multiplataforma.</p>
+          </li>
+          <li class="grid gap-3 py-6 md:grid-cols-[14rem_1fr] md:items-baseline">
+            <p class="text-terracotta">Eloy</p>
+            <p class="text-paper/70">Es compromet a editar i verificar el codi i els textos del lliurament, a fer complir la guia d'estils i a avisar quan una peça no encaixa amb la resta.</p>
+          </li>
+          <li class="grid gap-3 py-6 md:grid-cols-[14rem_1fr] md:items-baseline">
+            <p class="text-terracotta">Jan Felip Urgell</p>
+            <p class="text-paper/70">Es compromet a coordinar tasques i terminis, a deixar els acords per escrit i a cuidar que la pàgina col·lectiva es llegeixi com un sol projecte.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="guia" class="scroll-mt-20 border-t border-paper/15">
+      <div class="mx-auto w-full max-w-6xl px-5 py-16 md:px-8 md:py-20">
+        <p class="mb-3 text-xs uppercase tracking-[0.18em] text-paper/60">Guia d'estils</p>
+        <h2 class="mb-4 text-4xl leading-none md:text-5xl">Colors <em class="font-normal text-terracotta">principals</em></h2>
+        <p class="mb-10 max-w-xl text-paper/70">La pàgina fa servir Libre Baskerville i la mateixa paleta del grup: Paper, Ink, Terracotta, Olive i Muted.</p>
+        <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+          <li class="border border-paper/15">
+            <span class="block h-32 bg-paper"></span>
+            <div class="p-4">
+              <strong class="block text-lg font-normal">Paper</strong>
+              <span class="text-sm tracking-wide text-paper/60">#F4F0E8</span>
+              <p class="mt-2 text-sm text-paper/70">Text i monograma sobre fons fosc.</p>
+            </div>
+          </li>
+          <li class="border border-paper/15">
+            <span class="block h-32 border border-paper/20 bg-ink"></span>
+            <div class="p-4">
+              <strong class="block text-lg font-normal">Ink</strong>
+              <span class="text-sm tracking-wide text-paper/60">#242320</span>
+              <p class="mt-2 text-sm text-paper/70">Fons de la pàgina i de la marca.</p>
+            </div>
+          </li>
+          <li class="border border-paper/15">
+            <span class="block h-32 bg-terracotta"></span>
+            <div class="p-4">
+              <strong class="block text-lg font-normal">Terracotta</strong>
+              <span class="text-sm tracking-wide text-paper/60">#B85F43</span>
+              <p class="mt-2 text-sm text-paper/70">Èmfasi, rols i enllaços actius.</p>
+            </div>
+          </li>
+          <li class="border border-paper/15">
+            <span class="block h-32 bg-olive"></span>
+            <div class="p-4">
+              <strong class="block text-lg font-normal">Olive</strong>
+              <span class="text-sm tracking-wide text-paper/60">#5D6244</span>
+              <p class="mt-2 text-sm text-paper/70">Etiquetes i detalls secundaris.</p>
+            </div>
+          </li>
+          <li class="border border-paper/15">
+            <span class="block h-32 bg-muted"></span>
+            <div class="p-4">
+              <strong class="block text-lg font-normal">Muted</strong>
+              <span class="text-sm tracking-wide text-paper/60">#6B665C</span>
+              <p class="mt-2 text-sm text-paper/70">Text secundari de la guia.</p>
+            </div>
+          </li>
+        </ul>
+        <div class="mt-10 flex flex-col items-center justify-between gap-6 rounded-xl border border-dashed border-[#AF8445]/40 bg-[#403C39]/35 px-5 py-5 text-center sm:flex-row sm:px-6 sm:text-left">
+          <div>
+            <strong class="block text-xl font-normal text-paper">Document de la guia d'estils</strong>
+            <span class="text-sm text-paper/70">El redactat del grup, al Drive.</span>
+          </div>
+          <a href="https://drive.google.com/" class="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#AF8445] px-[1.35rem] py-[0.65rem] font-['Outfit'] text-[0.85rem] font-normal tracking-[0.03em] text-[#1e1c1b] no-underline transition-colors hover:bg-[#bf985e]">
+            <i class="bi bi-file-earmark-text text-[#ffffff]"></i>Veure Document ↗
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-paper/15">
+    <div class="mx-auto flex w-full max-w-6xl flex-col gap-3 px-5 py-6 text-xs uppercase tracking-[0.12em] text-paper/60 md:flex-row md:items-center md:justify-between md:px-8">
+      <span>JE · 2026</span>
+      <a class="inline-flex items-center gap-1.5 text-paper hover:text-terracotta" href="#inici"><i class="bi bi-arrow-up text-[#ffffff]"></i>Tornar a dalt</a>
+    </div>
+  </footer>
+</body>
+</html>

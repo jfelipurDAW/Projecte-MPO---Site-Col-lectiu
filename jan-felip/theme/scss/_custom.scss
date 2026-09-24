@@ -16,6 +16,7 @@ body {
     $color-bg-main;
 }
 
+
 .profile {
   position: relative;
   display: grid;
@@ -41,9 +42,9 @@ body {
     align-items: center;
     margin: 0;
     font-family: $font-serif;
-    font-size: clamp(0.85rem, 1.5vw, 1.05rem);
+    font-size: clamp(1.85rem, 1.5vw, 1.05rem);
     font-weight: 500;
-    line-height: 1.15;
+    line-height: 0.9;
     letter-spacing: 0.06em;
     color: $color-accent;
   }
@@ -63,7 +64,6 @@ body {
     color: $color-silver;
   }
 
-  // —— Pastilla central —— //
   &__pill {
     position: relative;
     z-index: 0;
@@ -85,17 +85,14 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center 20%;
-    filter: sepia(0.35) contrast(0.95) brightness(0.9);
-    transition: all 0.3s;
-    filter: blur(1rem);
+    filter: sepia(0.35) contrast(0.95) brightness(0.9) blur(1rem);
+    transition: filter 0.3s;
 
     &:hover {
-      filter: blur(0);
+      filter: sepia(0.35) contrast(0.95) brightness(0.9) blur(0);
     }
   }
 
-
-  // —— Títol centrat —— //
   &__title {
     position: absolute;
     z-index: 1;
@@ -109,6 +106,9 @@ body {
   }
 
   &__name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin: 0;
     font-family: $font-serif;
     font-size: clamp(2.25rem, 7vw, 5.5rem);
@@ -116,7 +116,10 @@ body {
     letter-spacing: 0.02em;
     line-height: 1;
     color: $color-silver;
-    white-space: nowrap;
+
+    span {
+      white-space: nowrap;
+    }
   }
 
   &__rule {
@@ -144,5 +147,239 @@ body {
       font-style: italic;
       font-weight: 500;
     }
+  }
+}
+
+
+.content {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 4rem) clamp(1.25rem, 4vw, 2.5rem);
+
+  &__section {
+    margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+    padding-bottom: clamp(2rem, 4vw, 3rem);
+    border-bottom: 1px solid rgba($color-silver, 0.12);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__heading {
+    margin: 0 0 1.25rem;
+    font-family: $font-serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: $color-accent;
+
+    .bi {
+      margin-right: 0.45rem;
+      font-size: 0.72em;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    gap: 1.5rem;
+  }
+
+  &__card {
+    background: rgba($color-graphite, 0.35);
+    border: 1px solid rgba($color-silver, 0.08);
+    border-radius: 0.75rem;
+    padding: clamp(1.25rem, 3vw, 1.75rem);
+  }
+
+  &__card-title {
+    margin: 0 0 0.65rem;
+    font-family: $font-serif;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 600;
+    color: $color-silver;
+  }
+
+  p {
+    margin: 0 0 0.85rem;
+    font-size: clamp(0.875rem, 1.4vw, 0.95rem);
+    font-weight: 300;
+    line-height: 1.7;
+    color: rgba($color-silver, 0.8);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0.75rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    li {
+      position: relative;
+      padding-left: 1.15rem;
+      font-size: clamp(0.875rem, 1.4vw, 0.95rem);
+      font-weight: 300;
+      line-height: 1.65;
+      color: rgba($color-silver, 0.8);
+
+      &::before {
+        content: "—";
+        position: absolute;
+        left: 0;
+        color: $color-accent;
+      }
+    }
+
+    &--check li::before {
+      content: "✓";
+    }
+  }
+
+
+  &__doc {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    background: rgba($color-graphite, 0.35);
+    border: 1px dashed rgba($color-accent, 0.4);
+    border-radius: 0.75rem;
+    padding: clamp(1rem, 3vw, 1.5rem);
+
+    @media (max-width: 640px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.65rem 1.35rem;
+    background: $color-accent;
+    color: $color-charcoal;
+    font-family: $font-sans;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    border-radius: 2rem;
+    transition: background 0.2s;
+
+    &:hover {
+      background: lighten($color-accent, 8%);
+    }
+  }
+
+  // —— Contacte —— //
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    background: rgba($color-graphite, 0.35);
+    border: 1px solid rgba($color-silver, 0.08);
+    border-radius: 0.75rem;
+    padding: clamp(1rem, 3vw, 1.5rem);
+    text-decoration: none;
+    color: $color-silver;
+    font-size: clamp(0.85rem, 1.3vw, 0.95rem);
+    font-weight: 300;
+    transition: border-color 0.2s;
+
+    &:hover {
+      border-color: $color-accent;
+    }
+  }
+
+  &__contact-label {
+    font-family: $font-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $color-accent;
+    margin-bottom: 0.15rem;
+  }
+}
+
+.palette {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+
+  &__chip {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid rgba($color-silver, 0.08);
+
+    &--paper  { background: #F4F0E8; }
+    &--ink    { background: #242320; }
+    &--terracotta { background: #B85F43; }
+    &--olive  { background: #5D6244; }
+    &--muted  { background: #6B665C; }
+
+    padding-top: 3rem;
+  }
+
+  &__label,
+  &__hex {
+    display: block;
+    padding: 0.15rem 0.6rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+  }
+
+  &__label {
+    padding-top: 0.45rem;
+    font-weight: 400;
+    color: $color-silver;
+    background: rgba($color-charcoal, 0.85);
+  }
+
+  &__hex {
+    padding-bottom: 0.45rem;
+    font-weight: 300;
+    color: rgba($color-silver, 0.55);
+    background: rgba($color-charcoal, 0.85);
+  }
+}
+
+.bi {
+  color: #ffffff;
+  font-style: normal;
+  line-height: 1;
+}
+
+.site-footer {
+  text-align: center;
+  padding: clamp(1.5rem, 3vw, 2.5rem) 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: rgba($color-silver, 0.35);
+  border-top: 1px solid rgba($color-silver, 0.08);
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .bi {
+    margin-right: 0.35rem;
   }
 }

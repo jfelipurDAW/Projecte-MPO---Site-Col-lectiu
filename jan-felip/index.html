@@ -3,55 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jan Felip Urgell</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Jan Felip Urgell — Pàgina Individual | Grup de Treball JE</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="./theme/css/style.css">
 </head>
 <body>
-  <hero class="profile" aria-label="Perfil de Jan Felip Urgell">
-    <div class="profile__mark" aria-hidden="true">
-      <!-- <img> -->
-    </div>
-
-    <p class="profile__year" aria-label="Any 2026">
+  <hero class="profile">
+    <p class="profile__year">
       <span>20</span>
       <span>26</span>
     </p>
 
     <figure class="profile__pill">
-      <img
-        class="profile__photo"
-        src="./assets/jo.jpg"
-        alt="Jan Felip Urgell"
-        width="640"
-        height="960"
-      >
+      <img class="profile__photo" src="./assets/jo.jpg" alt="Jan Felip Urgell">
     </figure>
 
     <header class="profile__title">
       <h1 class="profile__name">
-        Jan Felip Urgell
+        <span>Jan Felip</span>
+        <span>Urgell</span>
       </h1>
-      <span class="profile__rule" aria-hidden="true"></span>
+      <span class="profile__rule"></span>
       <p class="profile__role">
-        <span>
-          Coordinador
-        </span>
+        <span>Coordinador</span>
       </p>
     </header>
 
     <p class="profile__tagline">
       <span>Perfil personal</span>
-      <span>Jan Felip Urgell</span>
+      <span>Grup JE — DAW2</span>
     </p>
   </hero>
-  <main>
-    <h2>Rol</h2>
-    <p>
 
-    </p>
+  <main class="content">
+    <section class="content__section">
+      <h2 class="content__heading"><i class="bi bi-people"></i>Nom del Grup i Membres</h2>
+      <div class="content__grid">
+        <div class="content__card">
+          <h3 class="content__card-title">Nom de Grup: JE</h3>
+          <p>El grup es diu JE. El monograma és la marca comuna de <strong>Jan Altisent</strong>, <strong>Eloy</strong> i <strong>Jan Felip</strong>.</p>
+        </div>
+        <div class="content__card">
+          <h3 class="content__card-title">Membres i Rols</h3>
+          <ul class="content__list">
+            <li><strong>Jan Altisent:</strong> Dissenyador d'interfícies i Verificador.</li>
+            <li><strong>Eloy:</strong> Editor i Verificador de tasques / codi.</li>
+            <li><strong>Jan Felip:</strong> Coordinador.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="content__section">
+      <h2 class="content__heading"><i class="bi bi-person-vcard"></i>Presentació Professional</h2>
+      <p>Déu vos guard. En aquest lloc col·lectiu faig de <strong>coordinador</strong>: ordeno el ritme del grup i cuido que cada peça encaixi amb la resta.</p>
+      <p>Aquesta pàgina és la meva presentació. El disseny i la verificació els porten en Jan Altisent i l'Eloy; jo faig que el lliurament es pugui seguir.</p>
+    </section>
+
+    <section class="content__section">
+      <h2 class="content__heading"><i class="bi bi-check2-circle"></i>Compromís vers a les Tasques</h2>
+      <p>Com a membre de l'equip i amb el rol de <strong>Coordinador</strong>, assumeixo el compromís de:</p>
+      <ul class="content__list content__list--check">
+        <li><strong>Coordinació:</strong> Seguir les tasques, els terminis i els punts on el grup necessita una decisió.</li>
+        <li><strong>Visió de conjunt:</strong> Fer que la pàgina col·lectiva es llegeixi com un sol treball, no com peces soltes.</li>
+        <li><strong>Acompanyament:</strong> Deixar espai al criteri de cada persona i ajudar a tancar el que queda obert.</li>
+      </ul>
+    </section>
+
+    <section class="content__section">
+      <h2 class="content__heading"><i class="bi bi-palette"></i>Guia d'Estils del Grup</h2>
+      <p>Aquesta pàgina s'ha creat respectant els patrons de disseny, tipografia i colors acordats pel grup:</p>
+
+      <div class="palette">
+        <div class="palette__chip palette__chip--paper">
+          <span class="palette__label">Paper</span>
+          <span class="palette__hex">#F4F0E8</span>
+        </div>
+        <div class="palette__chip palette__chip--ink">
+          <span class="palette__label">Ink</span>
+          <span class="palette__hex">#242320</span>
+        </div>
+        <div class="palette__chip palette__chip--terracotta">
+          <span class="palette__label">Terracotta</span>
+          <span class="palette__hex">#B85F43</span>
+        </div>
+        <div class="palette__chip palette__chip--olive">
+          <span class="palette__label">Olive</span>
+          <span class="palette__hex">#5D6244</span>
+        </div>
+        <div class="palette__chip palette__chip--muted">
+          <span class="palette__label">Muted</span>
+          <span class="palette__hex">#6B665C</span>
+        </div>
+      </div>
+
+      <div class="content__doc">
+        <div>
+          <h3 class="content__card-title">Document Oficial de la Guia d'Estils</h3>
+          <p>Document redactat amb les especificacions de disseny compartit en mode lectura.</p>
+        </div>
+        <a href="https://docs.google.com/document/d/1-ePsGVe5b6uvut_2kBfaX0hmp1AlnSdYyPuFVWDll4M/edit?usp=sharing" class="content__btn">
+          <i class="bi bi-file-earmark-text"></i>Veure Document ↗
+        </a>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Grup de Treball JE — DAW2 ILERNA | <a href="../index.html"><i class="bi bi-house"></i>Pàgina principal</a></p>
+  </footer>
 </body>
 </html>
