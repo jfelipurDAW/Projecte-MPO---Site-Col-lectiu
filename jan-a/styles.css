@@ -78,6 +78,23 @@ h1 em, h2 em { color: var(--terracotta); font-weight: 400; }
 .project-meta i { color: var(--terracotta); }
 .all-projects { margin-top: 60px; }
 
+.group-story { padding: 22px 0 40px; }
+.group-story h2 { margin-bottom: 18px; }
+.story-text { max-width: 700px; color: var(--muted); font-size: 18px; line-height: 1.8; }
+
+.style-guide { padding: 30px 0 110px; }
+.palette-grid { display: grid; grid-template-columns: repeat(5, minmax(120px, 1fr)); gap: 22px; margin-top: 38px; }
+.palette-item { display: flex; flex-direction: column; gap: 14px; }
+.swatch { display: block; width: 100%; height: 120px; border: 1px solid rgba(36,35,32,.08); }
+.swatch-paper { background: var(--paper); }
+.swatch-ink { background: var(--ink); }
+.swatch-terracotta { background: var(--terracotta); }
+.swatch-olive { background: var(--olive); }
+.swatch-muted { background: var(--muted); }
+.palette-item strong, .palette-item small { display: block; }
+.palette-item strong { margin-top: 2px; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+.palette-item small { color: var(--muted); font-size: 11px; letter-spacing: .05em; }
+
 .about { display: grid; grid-template-columns: 1fr 2fr; gap: 8%; padding: 112px 0 137px; border-top: 1px solid var(--line); }
 .about-number { color: var(--terracotta); font-size: 12px; }
 .about-content h2 { margin-bottom: 46px; }
@@ -114,13 +131,14 @@ h1 em, h2 em { color: var(--terracotta); font-weight: 400; }
 	.hero { min-height: auto; grid-template-columns: 1fr; gap: 58px; padding: 75px 0 100px; }
 	h1 { font-size: clamp(3.2rem, 16vw, 5.2rem); }
 	.hero-portrait { width: 84%; margin-right: 12px; }
-	.hero-stamp { left: -27px; }
 	.projects { padding: 90px 0 100px; }
 	.section-heading { display: block; margin-bottom: 43px; }
 	.section-note { margin-top: 25px; }
 	.project-grid { display: block; }
 	.project-card-small, .project-card-offset { width: 85%; margin: 54px 0 0 auto; }
 	.project-card-offset { margin-top: 54px; margin-right: auto; margin-left: 0; }
+	.palette-grid { grid-template-columns: repeat(2, minmax(120px, 1fr)); }
+	.group-story, .style-guide { padding-top: 18px; }
 	.about, .services { display: block; padding: 82px 0 94px; }
 	.about-number { margin-bottom: 38px; }
 	.about-columns { display: block; margin-bottom: 28px; }
